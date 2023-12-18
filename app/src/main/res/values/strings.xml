@@ -1,21 +1,16 @@
 <resources>
     <string name="app_name">NavigationComponent_Distancia</string>
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_title">Bienvenido a mi aplicación</string>
     <string name="name">Nombre</string>
+
+    <!-- Pet Fragment -->
+    <string name="welcome_name_title">Hola %s</string>
+    <string name="select_pet_label">Selecciona tu mascota favorita</string>
+
+    <!-- Result Fragment -->
+    <string name="result_name">Nombre: %s</string>
+    <string name="result_sex">Sexo: %s</string>
+    <string name="result_pet">Mascota: %s</string>
+
 </resources>
