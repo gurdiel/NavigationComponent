@@ -4,35 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultFragment"
-    android:padding="@dimen/layout_padding">
+    android:padding="@dimen/layout_padding"
+    tools:context=".ResultFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/tvResultName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="Tu nombre: Ana"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tu nombre: Ana" />
 
     <TextView
         android:id="@+id/tvResultSex"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="Sexo: Mujer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvResultName" />
+        app:layout_constraintTop_toBottomOf="@id/tvResultName"
+        tools:text="Sexo: Mujer" />
 
     <TextView
         android:id="@+id/tvResultPet"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="Tu mascota favorita: Perro"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvResultSex" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResultSex"
+        tools:text="Tu mascota favorita: Perro" />
+
+    <Button
+        android:id="@+id/btnResultVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="@dimen/block_top_margin"
+        android:text="Volver"
+        app:layout_constraintEnd_toStartOf="@+id/btnResultTerminar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultPet" />
+
+    <Button
+        android:id="@+id/btnResultTerminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="Terminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnResultVolver"
+        app:layout_constraintTop_toTopOf="@+id/btnResultVolver" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
